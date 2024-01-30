@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Personal Blog</title>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name's Blog</h1>
+        <p>Sharing thoughts, experiences, and insights</p>
+    </header>
+
+    <nav>
+        <ul class="tabs">
+            <li class="tab" onclick="openTab('home')">Home</li>
+            <li class="tab" onclick="openTab('about')">About</li>
+            <li class="tab" onclick="openTab('blog')">Blog</li>
+            <li class="tab" onclick="openTab('contact')">Contact</li>
+        </ul>
+    </nav>
+
+    <section id="home" class="tab-content">
+        <h2>Welcome to My Blog!</h2>
+        <p>This is the space where I share my thoughts, experiences, and insights on various topics.</p>
+    </section>
+
+    <section id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>Introduce yourself here...</p>
+    </section>
+
+    <section id="blog" class="tab-content">
+        <h2>Latest Posts</h2>
+        <article>
+            <h3>Post Title 1</h3>
+            <p>Write your thoughts and experiences here...</p>
+        </article>
+        <article>
+            <h3>Post Title 2</h3>
+            <p>Another interesting topic you want to share...</p>
+        </article>
+        <!-- Add more articles as needed -->
+    </section>
+
+    <section id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
